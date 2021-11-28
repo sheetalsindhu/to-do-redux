@@ -1,0 +1,85 @@
+.InputBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+  margin: auto;
+}
+.main h3 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.InputBox input {
+  width: 500px;
+}
+
+.todoItem {
+  display: flex;
+  margin: auto;
+  width: 700px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #16161a;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.delete {
+  font-size: 30px;
+  width: 40px;
+  height: 43px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.item {
+  margin-top: 200px;
+}
+
+.done {
+  text-decoration: line-through;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+.notDone {
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+.upperDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  z-index: 999;
+  width: 100%;
+}
+
+.modalBox {
+  display: flex;
+  gap: 20px;
+}
+
+.modalBox input,
+.modalBox button {
+  margin-top: 20px;
+}
