@@ -3,10 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import styles from "./todo.module.css";
 import { TodoList } from "./TodoList";
 import { addTodo, toggleTodo, deleteTodo, editTodo } from "../store/Action";
-import { FaEdit } from "react-icons/fa";
 
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
@@ -28,19 +26,9 @@ export const Todo = () => {
   console.log(todos);
   const dispatch = useDispatch();
 
-  const [edit, setEdit] = useState("");
-
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  //  state.todos =  useState(() => {
-  //   const savedTodos = localStorage.getItem("todos");
-  //   if (savedTodos) {
-  //     return JSON.parse(savedTodos);
-  //   } else {
-  //     return [];
-  //   }
-  // });
 
   const handleADD = () => {
     const addToDoAction = addTodo(title);

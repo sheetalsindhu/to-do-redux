@@ -7,7 +7,6 @@ import {
 
 import { v4 as uuidv4 } from "uuid";
 
-// Action
 export const addTodo = (payload) => ({
   type: ADD_TODO,
   payload: {
@@ -16,13 +15,6 @@ export const addTodo = (payload) => ({
     id: uuidv4(),
   },
 });
-
-// export const addTodo = (payload) => {
-//   return {
-//     type: ADD_TODO,
-//     payload,
-//   };
-// };
 
 export const toggleTodo = (payload) => {
   return {
